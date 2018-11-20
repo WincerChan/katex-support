@@ -1,28 +1,51 @@
+@import '~antd/dist/antd.css';
+@media only screen and (max-width: 800px) {
+    .ant-col-12 {
+        width: 100%;
+    }
+    .katex-display {
+        margin: 1rem 0 !important;
+    }
+}
+
+.ant-layout-header {
+    background: unset;
+}
+
+.katex-display {
+    margin: 0 1rem;
+    overflow: auto;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
