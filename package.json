@@ -1,10 +1,13 @@
 {
-  "name": "katex-test",
+  "name": "katex-ts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.10.8",
+    "bulma": "^0.7.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-katex": "^2.0.2",
     "react-scripts-ts": "3.1.0"
   },
   "scripts": {
