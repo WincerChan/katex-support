@@ -1,20 +1,47 @@
 @import '~antd/dist/antd.css';
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 769px) {
     .ant-col-12 {
         width: 100%;
     }
     .katex-display {
         margin: 1rem 0 !important;
+        height: 20rem!important;
+        min-height: 20rem!important;
+        width: unset;
+        max-width: unset;
     }
+    .content-right {
+        max-width: unset;
+    }
+    textarea.ant-input {
+        height: 20rem!important;
+        min-height: 20rem!important;
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+.content-left {
+    margin: 1vh;
+}
+
+.content-right {
+    /* border: 1px solid #d9d9d9;
+    border-radius: 3px; */
+    max-width: 50%;
+    overflow: auto;
+    margin: 1vh;
+}
+
+textarea.ant-input {
+    height: 40rem;
+    min-height: 40rem;
 }
 
 .ant-layout-header {
     background: unset;
-}
-
-.katex-display {
-    margin: 0 1rem;
-    overflow: auto;
 }
 
 .App {

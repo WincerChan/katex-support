@@ -1,5 +1,5 @@
-import { Col, Input, Row } from 'antd'
-import 'katex/dist/katex.min.css';
+// import { Input } from 'antd'
+import 'katex/dist/katex.min.css'
 
 
 import * as React from 'react';
@@ -24,20 +24,22 @@ class Content extends React.Component {
 
     public render() {
         return (
-            <Row style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-                <Col span={12}>
-                    <Input.TextArea
-                        value={this.state.value}
-                        onChange={this.handleChange}
-                        placeholder="HKhfk,"
-                        autosize={{ minRows: 26, maxRows: 26 }} />
-                </Col>
-                <Col span={12}>
-                    <BlockMath>
-                        {this.state.value}
-                    </BlockMath>
-                </Col>
-            </Row>
+            <div className="section container">
+                <nav className="level">
+                    <div className="level-item has-text-centered content-left">
+                        <textarea
+                            className="textarea"
+                            value={this.state.value}
+                            onChange={this.handleChange}
+                            placeholder="在这里输入数学公式，以测试 katex 的支持" />
+                    </div>
+                    <div className="level-item has-text-centered content-right">
+                        <BlockMath>
+                            {this.state.value}
+                        </BlockMath>
+                    </div>
+                </nav>
+            </div>
         );
     }
 }
