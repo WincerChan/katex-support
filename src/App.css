@@ -1,5 +1,5 @@
 @import '~antd/dist/antd.css';
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     .ant-col-12 {
         width: 100%;
     }
@@ -11,12 +11,15 @@
         max-width: unset;
     }
     .content-right {
-        max-width: unset;
+        max-width: unset!important;
     }
-    textarea.ant-input {
-        height: 20rem!important;
-        min-height: 20rem!important;
+    .content-left {
+        max-width: unset!important;
     }
+}
+
+textarea {
+    min-height: 20rem;
 }
 
 body {
@@ -25,24 +28,20 @@ body {
 
 .content-left {
     margin: 1vh;
+    min-width: 46%;
+    max-width: 46%;
 }
 
 .content-right {
     /* border: 1px solid #d9d9d9;
     border-radius: 3px; */
-    max-width: 50%;
     overflow: auto;
     margin: 1vh;
+    min-width: 46%;
+    max-width: 46%;
 }
 
-textarea.ant-input {
-    height: 40rem;
-    min-height: 40rem;
-}
 
-.ant-layout-header {
-    background: unset;
-}
 
 .App {
     text-align: center;
